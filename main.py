@@ -18,16 +18,14 @@ def correct_number(number):
 
 
 def get_word(number):
-    if number == 1:
-        return "One"
-    elif number == 2:
-        return "Two"
-    elif number == 3:
-        return "Three"
-    elif number == 4:
-        return "Four"
-    elif number == 5:
-        return "Five"
+    numbers_words = {
+        1: "One",
+        2: "Two",
+        3: "Three",
+        4: "Four",
+        5: "Five"
+    }
+    return numbers_words[number]
 
 
 def show_result(word):
